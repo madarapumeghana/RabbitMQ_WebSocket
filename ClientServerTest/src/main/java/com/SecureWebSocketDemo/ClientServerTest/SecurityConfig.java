@@ -23,12 +23,4 @@ public class SecurityConfig {
                 .logout( logout -> logout.logoutSuccessUrl("/"));
         return http.build();
     }
-	
-	/*
-	 * @Bean public InMemoryUserDetailsManager userDetailsService() { UserDetails
-	 * user = User.withDefaultPasswordEncoder() .username("test") .password("test")
-	 * .roles("USER") .build();
-	 * 
-	 * return new InMemoryUserDetailsManager(user); }
-	 */
 }
